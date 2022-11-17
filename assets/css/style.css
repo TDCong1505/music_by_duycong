@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #ec1f55;
+    --primary-color: #7b00b3;
     --text-color: #333;
   }
   
@@ -10,8 +10,8 @@
   }
   
   body {
-    background-color: rgb(24 24 24);
-
+    transition: 1.5s;
+    background-color: #141D26;
   }
   
   html {
@@ -38,7 +38,7 @@
   }
   
   .dashboard {
-    background-image: url(../bg/Lan.background.PNG);
+    background-image: url(../bg/TLinh_01.PNG);
     background-size: cover;
     padding: 16px 16px 14px;
     background-color: #fff;
@@ -134,7 +134,7 @@
   
   /* PLAYLIST */
   .playlist {
-    margin-top: 408px;
+    margin-top: 430px;
     padding: 12px;
   }
   
@@ -142,7 +142,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    background-color: #fff;
+    background-color: #550572;
     padding: 8px 16px;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
@@ -191,3 +191,47 @@
     font-size: 18px;
   }
   
+  .night-toggle {
+    width: 33px;
+    height: 33px;
+    right: 20px;
+    top: -25px;
+    position: absolute;
+    }
+    .night-toggle:hover{
+      cursor: pointer;
+    }
+    .moon {
+      background-color: transparent;
+      box-shadow: -6px 1px 0 3px #275e8e;
+      border-left:3px solid #27476D;
+      border-radius:50%;
+      width: 20px;
+      height: 20px;
+      margin-left:8px;
+      margin-top:0px;
+      transition: 2s;
+    }
+    .sun {
+      background-color: #fdd462;
+      box-shadow: 2px 0px 0px 1px #D19C29;
+      border-radius:50%;
+      width: 26px;
+      height: 26px;
+      transition: 2s;
+    }
+    
+    /* ----- optional ----- */
+    .break {
+      flex-basis: 100%;
+      height: 0;
+    }
+    .opt {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:center;
+      font-family: sans-serif;
+      margin-top:5%;
+      text-align:center;
+    }
+    
