@@ -11,10 +11,7 @@
   
   body {
     transition: 1.5s;
-    background-image: url("../img/5.jpg");
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size: contain;
+    background-color: #333;
   }
   
   html {
@@ -136,7 +133,7 @@
   
   /* PLAYLIST */
   .playlist {
-    margin-top: 430px;
+    margin-top: 400px;
     padding: 12px;
   }
   
