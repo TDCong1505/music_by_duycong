@@ -10,61 +10,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 <body>
+  
+        <div class="player">
+
+            <!-- Dashboard -->
+            <div class="dashboard">
     
-    <div class="player">
-        <!-- Day And Night Toggle -->
-        <div class="night-toggle" onClick="switchMode()">
-            <div id="moon" class="moon"></div>
-        </div>
-        <!-- Dashboard -->
-        <div class="dashboard">
-
-            <!-- Header -->
-            <header>
-                <h4>Now playing :</h4>
-                <h2 style="color: white">String 57th & 9th</h2>
-            </header>
-
-            <!-- CD -->
-            <div class="cd">
-                <div class="cd-thumb"
-                    style="background-image: url('data:image/jpeg;base64,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');">
+                <!-- Header -->
+                <header>
+                    <h4>Now playing :</h4>
+                    <h2 style="color: white">String 57th & 9th</h2>
+                </header>
+    
+                <!-- CD -->
+                <div class="cd">
+                    <div class="cd-thumb"
+                        style="background-image: url('data:image/jpeg;base64,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');">
+                    </div>
                 </div>
+    
+                <!-- Control -->
+                <div class="control">
+                    <div class="btn btn-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-toggle-play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                </div>
+                <input type="range" class="progress" id="progress" value="0" step="1" min="0" max="100">
+                <audio id="audio" src=""></audio>
             </div>
-
-            <!-- Control -->
-            <div class="control">
-                <div class="btn btn-repeat">
-                    <i class="fas fa-redo"></i>
-                </div>
-                <div class="btn btn-prev">
-                    <i class="fas fa-step-backward"></i>
-                </div>
-                <div class="btn btn-toggle-play">
-                    <i class="fas fa-pause icon-pause"></i>
-                    <i class="fas fa-play icon-play"></i>
-                </div>
-                <div class="btn btn-next">
-                    <i class="fas fa-step-forward"></i>
-                </div>
-                <div class="btn btn-random">
-                    <i class="fas fa-random"></i>
-                </div>
+    
+            
+    
+            <!-- Playlist -->
+            <div class="playlist">
+    
             </div>
-            <input type="range" class="progress" id="progress" value="0" step="1" min="0" max="100">
-            <audio id="audio" src=""></audio>
-        </div>
-
-        
-
-        <!-- Playlist -->
-        <div class="playlist">
-
+            
         </div>
         
-    </div>
 </body>
 <script>
     /** 
@@ -92,9 +89,11 @@
     const prevBtn = $('.btn-prev');
     const randomBtn = $('.btn-random');
     const repeatBtn = $('.btn-repeat');
-    const playlist = $('.playlist');
+    const playlist = $('.playlist');    
     const DUYCONG_STORAGE_KEY = 'DUYCONG_STORAGE_KEY';
-
+    const mp4 = $('#mp4')
+    const dashboard = $('.dashboard');
+    const song = $('.song')
 
     const app = {
         currentIndex: 0,
@@ -108,72 +107,151 @@
         },
         songs: [
             {
-                name:"Tao Thích Mi",
-                singer:"Lil Pig",
-                path:'./assets/music/Tau Thích Mi.mp3',
+                name:"8 Letters  Why Dont We",
+                singer:"Top Tik Tok",
+                path:'./assets/music/8 Letters  Why Dont We.mp3',
+                image: './assets/img/1.jpg',
+                background:'./assets/bg/1.jpg'
+            },
+            {
+                name:"Broken Hearts",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Broken Hearts.mp3',
                 image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/2.jpg'
             },
             {
-                name:'Hôm Nay Em Cưới Rồi',
-                singer:'Khải Đăng x Freak D',
-                path:'./assets/music/Hôm Nay Em Cưới Rồi.mp3',
-                image: './assets/img/Hôm Nay Em Cưới Rồi.PNG',
+                name:"Bukan",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Bukan.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/3.jpg'
             },
             {
-                name:'Bông Hoa Đẹp Nhất',
-                singer:'Quân A.P x Freak D',
-                path:'./assets/music/Bông Hoa Đẹp Nhất.mp3',
-                image: './assets/img/Bông Hoa Đẹp Nhất.PNG',
+                name:"Creep",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Creep.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/4.jpg'
             },
             {
-                name:'Chắc Vì Mình Chưa Tốt',
-                singer:'Thanh Hưng x Vux',
-                path:'./assets/music/Chắc Vì Mình Chưa Tốt.mp3',
-                image: './assets/img/Chắc Vì Mình Chưa Tốt.PNG',
+                name:"Drivers License x Take Me To Church",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Drivers License x Take Me To Church.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/5.jpg'
             },
             {
-                name:'Nàng Thơ',
-                singer:'Hoàng Dũng x Freak D',
-                path:'./assets/music/Nàng Thơ.mp3',
-                image: './assets/img/Nàng Thơ.PNG',
-            },          
-            {
-                name: 'Đánh Mất Em',
-                singer: 'Quang Đăng Trần x Freak D',
-                path: './assets/music/Đánh Mất Em.mp3',
-                image: './assets/img/Đánh Mất Em.PNG',
-
+                name:"East Of Eden",
+                singer:"Top Tik Tok",
+                path:'./assets/music/East Of Eden.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/6.jpg'
             },
             {
-                name: 'Chẳng Thể Tìm Được Em',
-                singer: 'PhucXp ft. Freak D',
-                path: './assets/music/Chẳng Thể Tìm Được Em.mp3',
-                image: './assets/img/Chẳng Thể Tìm Được Em.PNG'
+                name:"End of Time",
+                singer:"Top Tik Tok",
+                path:'./assets/music/End of Time.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/7.jpg'
             },
             {
-                name:'Anh Mệt Rồi',
-                singer:'Quang Đăng Trần x Freak D',
-                path: './assets/music/Anh Mệt Rồi.mp3',
-                image:'./assets/img/Anh Mệt Rồi.PNG'
+                name:"Hear Me Now",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Hear Me Now.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/8.jpg'
             },
             {
-                name:'Nợ Ai Đó Lời Xin Lỗi',
-                singer:'Bozitt',
-                path:'./assets/music/Nợ Ai Đó Lời Xin Lỗi.mp3',
-                image:'./assets/img/Nợ Ai Đó Lời Xin Lỗi.PNG'
+                name:"Home",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Home.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/9.jpg'
             },
             {
-                name:'Tệ Thật Anh Nhớ Em',
-                singer:'Thanh Hưng x Freak D',
-                path:'./assets/music/Tệ Thật Anh Nhớ Em.mp3',
-                image:'./assets/img/Tệ Thật Anh Nhớ Em.PNG'
-            }
+                name:"How To Love",
+                singer:"Top Tik Tok",
+                path:'./assets/music/How To Love.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/10.jpg'
+            },
+            {
+                name:"I love You",
+                singer:"Top Tik Tok",
+                path:'./assets/music/I love You.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/11.jpg'
+            },
+            {
+                name:"Lemon Tree",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Lemon Tree.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/12.jpg'
+            },
+            {
+                name:"Mine",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Mine.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/13.jpg'
+            },
+            {
+                name:"Oops Remix  Little Mix",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Oops Remix  Little Mix.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/14.jpg'
+            },
+            {
+                name:"Runaway",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Runaway.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/15.jpg'
+            },
+            {
+                name:"Salting",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Salting.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/16.jpg'
+            },
+            {
+                name:"Title",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Title.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/17.jpg'
+            },
+            {
+                name:"Try",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Try.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/18.jpg'
+            },
+            {
+                name:"Where We Started",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Where We Started.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/19.jpg'
+            },
+            {
+                name:"Wicked Wonderland",
+                singer:"Top Tik Tok",
+                path:'./assets/music/Wicked Wonderland.mp3',
+                image: './assets/img/Tau Thích Mi.PNG',
+                background:'./assets/bg/20.jpg'
+            },
         ],
         render: function () {
             const htmls = this.songs.map((song,index) => {
                 return (
                     `
-                <div data-index="${index}" class="song ${index === this.currentIndex  ? 'active' : ''}">
+                <div style="background-image: url('${song.background}');" data-index="${index}" class="song ${index === this.currentIndex  ? 'active' : ''}">
                 <div class="thumb" style="background-image: url('${song.image}');"></div>
                 <div class="body">
                     <h3 class="title">${song.name}</h3>
@@ -333,6 +411,7 @@
             heading.textContent = this.currentSong.name;
             cdThumb.style.backgroundImage = `url('${this.currentSong.image}')`;
             audio.src = this.currentSong.path;
+            dashboard.style.backgroundImage = `url('${this.currentSong.background}')`;
         },
         getCurrentSong: function () {
             return this.songs[this.currentIndex];
@@ -388,8 +467,5 @@
 
     //App start
     app.start();
-
-
 </script>
-<script src="toggle.js"></script>
 </html>
